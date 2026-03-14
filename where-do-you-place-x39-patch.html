@@ -1,24 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google-site-verification" content="arnz8fMMGsBDFW-cunvpnEXxRSeWnuwAAz8diQABudE" />
+
   <title>Where Do You Place the X39 Patch? | Patch Reference Hub</title>
   <meta name="description" content="Learn where people commonly place the X39 patch, what official guidance says, why online placement advice gets confusing, and how to choose a practical location that fits your daily routine." />
-  <link rel="canonical" href="https://dmr440.github.io/patch-reference-hub/where-do-you-place-x39-patch.html" />
+  <link rel="canonical" href="https://patchreferencehub.com/where-do-you-place-x39-patch.html" />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KRPRL9LC');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZTLYEMQMD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KZTLYEMQMD');
+  </script>
 
   <style>
     :root {
       --bg: #f5f7fb;
       --surface: #ffffff;
+      --surface-soft: #fbfdff;
       --text: #1f2937;
       --muted: #5b6472;
       --border: #d9e1ec;
       --accent: #405e7c;
+      --accent-dark: #203247;
       --accent-soft: #eaf1f7;
       --shadow: 0 10px 30px rgba(38, 55, 77, 0.08);
       --radius: 18px;
-      --max: 860px;
+      --max: 1100px;
+      --article-max: 860px;
     }
 
     * { box-sizing: border-box; }
@@ -37,19 +61,21 @@
       text-decoration: none;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: underline;
+    }
 
     .site-header {
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 20;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav-wrap {
-      max-width: 1100px;
+      max-width: var(--max);
       margin: 0 auto;
       padding: 16px 20px;
       display: flex;
@@ -60,17 +86,34 @@
     }
 
     .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand a {
+      color: var(--text);
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.2px;
-      color: var(--text);
+    }
+
+    .tagline {
+      display: inline-block;
+      width: fit-content;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 999px;
+      padding: 4px 9px;
     }
 
     .nav-links {
       display: flex;
-      gap: 18px;
+      gap: 16px;
       flex-wrap: wrap;
-      font-size: 0.96rem;
+      font-size: 0.95rem;
     }
 
     .nav-links a {
@@ -79,7 +122,7 @@
     }
 
     .page {
-      max-width: var(--max);
+      max-width: var(--article-max);
       margin: 34px auto 60px;
       padding: 0 18px;
     }
@@ -99,13 +142,13 @@
     }
 
     h1, h2, h3 {
-      line-height: 1.25;
-      color: #203247;
       margin-top: 0;
+      line-height: 1.24;
+      color: var(--accent-dark);
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.25rem;
       margin-bottom: 10px;
     }
 
@@ -115,23 +158,47 @@
       margin-bottom: 12px;
     }
 
-    p { margin: 0 0 18px; }
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 0 0 18px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
 
     .intro {
       font-size: 1.06rem;
       color: #334155;
     }
 
+    .byline {
+      font-size: 0.94rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .answer-box,
     .note {
       background: var(--accent-soft);
       border: 1px solid #d6e4f0;
       border-radius: 14px;
-      padding: 18px 18px;
+      padding: 18px;
       margin: 24px 0;
       color: #30465d;
     }
 
-    .related, .faq-box {
+    .faq-box,
+    .related {
       margin-top: 34px;
       padding: 22px;
       border-radius: 16px;
@@ -139,14 +206,10 @@
       background: #fbfdff;
     }
 
-    .related h2, .faq-box h2 { margin-top: 0; }
-
-    ul {
-      padding-left: 22px;
-      margin: 0 0 18px;
+    .faq-box h2,
+    .related h2 {
+      margin-top: 0;
     }
-
-    li { margin-bottom: 10px; }
 
     .continue-grid {
       display: grid;
@@ -176,112 +239,214 @@
       max-width: var(--max);
       margin: 0 auto 50px;
       padding: 0 18px;
+    }
+
+    .footer-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-links,
+    .social-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .footer-links a,
+    .social-links a {
+      white-space: nowrap;
+    }
+
+    .footer-card p:last-child {
+      margin-bottom: 0;
     }
 
     @media (max-width: 640px) {
-      .card { padding: 26px 20px; }
-      h1 { font-size: 1.85rem; }
-      h2 { font-size: 1.3rem; }
-      .nav-wrap { padding: 14px 16px; }
+      .nav-wrap {
+        padding: 14px 16px;
+      }
+
+      .card {
+        padding: 26px 20px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.28rem;
+      }
     }
   </style>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dmr440.github.io/patch-reference-hub/"
+        "@type": "Organization",
+        "@id": "https://patchreferencehub.com/#organization",
+        "name": "Patch Reference Hub",
+        "url": "https://patchreferencehub.com/",
+        "email": "dave@patchreferencehub.com",
+        "founder": {
+          "@id": "https://patchreferencehub.com/#person"
+        },
+        "sameAs": [
+          "https://www.facebook.com/Patch.Reference.Hub",
+          "https://www.instagram.com/patch_reference_hub/",
+          "https://nz.pinterest.com/Patch_Reference_Hub/"
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "FAQs",
-        "item": "https://dmr440.github.io/patch-reference-hub/faq.html"
+        "@type": "Person",
+        "@id": "https://patchreferencehub.com/#person",
+        "name": "Dave Ross",
+        "jobTitle": "Publisher",
+        "email": "dave@patchreferencehub.com",
+        "worksFor": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "affiliation": {
+          "@type": "Organization",
+          "name": "LifeWave"
+        },
+        "homeLocation": {
+          "@type": "Country",
+          "name": "New Zealand"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/dave-ross-69245727/",
+          "https://nz.pinterest.com/Patch_Reference_Hub/",
+          "https://www.facebook.com/Patch.Reference.Hub",
+          "https://www.instagram.com/patch_reference_hub/"
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
+        "@type": "WebSite",
+        "@id": "https://patchreferencehub.com/#website",
+        "url": "https://patchreferencehub.com/",
+        "name": "Patch Reference Hub",
+        "description": "Independent educational resource covering LifeWave patch questions, X39 beginner guides, placement topics, daily routines, and practical FAQs.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#webpage",
+        "url": "https://patchreferencehub.com/where-do-you-place-x39-patch.html",
         "name": "Where Do You Place the X39 Patch?",
-        "item": "https://dmr440.github.io/patch-reference-hub/where-do-you-place-x39-patch.html"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://dmr440.github.io/patch-reference-hub/where-do-you-place-x39-patch.html"
-    },
-    "headline": "Where Do You Place the X39 Patch?",
-    "description": "Learn where people commonly place the X39 patch, what official guidance says, why online placement advice gets confusing, and how to choose a practical location that fits your daily routine.",
-    "author": {
-      "@type": "Organization",
-      "name": "Patch Reference Hub"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Patch Reference Hub"
-    },
-    "datePublished": "2026-03-10",
-    "dateModified": "2026-03-10"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Where do you place the X39 patch?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Official guidance shows several example body locations and generally recommends placing one patch on clean, dry skin as part of a simple daily routine. Many people focus on choosing a comfortable location that stays in place well throughout the day."
+        "description": "Learn where people commonly place the X39 patch, what official guidance says, why online placement advice gets confusing, and how to choose a practical location that fits your daily routine.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://patchreferencehub.com/#website"
+        },
+        "author": {
+          "@id": "https://patchreferencehub.com/#person"
+        },
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#breadcrumb"
         }
       },
       {
-        "@type": "Question",
-        "name": "Is there one best place to wear the X39 patch?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Many online discussions mention common spots such as the back of the neck or lower abdomen, but placement guidance is usually broader than the idea of one universal best location. In practice, comfort, adhesion, and consistency often matter more than chasing one perfect point."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://patchreferencehub.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "FAQs",
+            "item": "https://patchreferencehub.com/faq.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Where Do You Place the X39 Patch?",
+            "item": "https://patchreferencehub.com/where-do-you-place-x39-patch.html"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Do you need to rotate where you place the X39 patch?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Some people keep the same location as part of a routine, while others rotate spots for comfort or because of adhesive sensitivity. There is no need to present rotation as a universal rule, but it can be a practical option for some users."
-        }
+        "@type": "Article",
+        "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#article",
+        "mainEntityOfPage": {
+          "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#webpage"
+        },
+        "headline": "Where Do You Place the X39 Patch?",
+        "description": "Learn where people commonly place the X39 patch, what official guidance says, why online placement advice gets confusing, and how to choose a practical location that fits your daily routine.",
+        "author": {
+          "@id": "https://patchreferencehub.com/#person"
+        },
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "datePublished": "2026-03-10",
+        "dateModified": "2026-03-15"
       },
       {
-        "@type": "Question",
-        "name": "What if the X39 patch does not stay on well?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Adhesion can be affected by sweat, oils, lotion, body hair, or friction from clothing. Clean, dry skin and a lower-friction placement area can help the patch stay in place more securely."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does X39 placement advice sound different online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Online discussions often mix together personal routines, demonstration spots, and advice about different patch products. This can make common example locations sound like fixed rules when they are often just the most frequently repeated placements."
-        }
+        "@type": "FAQPage",
+        "@id": "https://patchreferencehub.com/where-do-you-place-x39-patch.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where do you place the X39 patch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Official guidance shows several example body locations and generally recommends placing one patch on clean, dry skin as part of a simple daily routine. Many people focus on choosing a comfortable location that stays in place well throughout the day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there one best place to wear the X39 patch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many online discussions mention common spots such as the back of the neck or lower abdomen, but placement guidance is usually broader than the idea of one universal best location. In practice, comfort, adhesion, and consistency often matter more than chasing one perfect point."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you need to rotate where you place the X39 patch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some people keep the same location as part of a routine, while others rotate spots for comfort or because of adhesive sensitivity. There is no need to present rotation as a universal rule, but it can be a practical option for some users."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if the X39 patch does not stay on well?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adhesion can be affected by sweat, oils, lotion, body hair, or friction from clothing. Clean, dry skin and a lower-friction placement area can help the patch stay in place more securely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does X39 placement advice sound different online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Online discussions often mix together personal routines, demonstration spots, and advice about different patch products. This can make common example locations sound like fixed rules when they are often just the most frequently repeated placements."
+            }
+          }
+        ]
       }
     ]
   }
@@ -290,25 +455,44 @@
 <body>
   <header class="site-header">
     <div class="nav-wrap">
-      <div class="brand"><a href="https://dmr440.github.io/patch-reference-hub/">Patch Reference Hub</a></div>
+      <div class="brand">
+        <a href="/">Patch Reference Hub</a>
+        <span class="tagline">Clear ; practical ; informational</span>
+      </div>
+
       <nav class="nav-links" aria-label="Primary">
-        <a href="https://dmr440.github.io/patch-reference-hub/">Home</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/faq.html">FAQs</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/about-this-product.html">About This Product</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/learn-more.html">Learn More</a>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/faq.html">FAQs</a>
+        <a href="/about-this-product.html">About This Product</a>
+        <a href="/designed-to-support.html">Designed to Support</a>
+        <a href="/learn-more.html">Learn More</a>
       </nav>
     </div>
   </header>
 
   <main class="page">
     <div class="breadcrumb">
-      <a href="https://dmr440.github.io/patch-reference-hub/">Home</a> /
-      <a href="https://dmr440.github.io/patch-reference-hub/faq.html">FAQs</a> /
+      <a href="/">Home</a> /
+      <a href="/faq.html">FAQs</a> /
       <span>Where Do You Place the X39 Patch?</span>
     </div>
 
     <article class="card">
       <h1>Where Do You Place the X39 Patch?</h1>
+
+      <p class="byline">Written by <strong>Dave Ross</strong> · Patch Reference Hub · Last updated: March 15, 2026</p>
+
+      <div class="answer-box">
+<strong>Direct answer:</strong> The X39 patch is typically placed on clean, dry skin in a comfortable location that stays in place during normal daily activity. Common example locations often discussed include the back of the neck, lower abdomen, wrist, or ankle. The most practical placement is a spot you can apply consistently as part of a simple daily routine.
+
+<br><br>
+
+<strong>Why keep reading:</strong> The rest of this guide explains why online placement advice often sounds conflicting, which locations are most commonly used, and how to choose a placement that works reliably in everyday use.
+</div>
 
       <p class="intro">One of the most common questions people ask when they first begin researching LifeWave X39 is very simple: where exactly should the patch be placed on the body? At first this sounds like a straightforward instruction question, but after searching online for a few minutes many people discover that placement advice can become surprisingly confusing.</p>
 
@@ -316,7 +500,7 @@
 
       <p>The purpose of this guide is to make that topic much clearer. Rather than focusing on a single “perfect point,” this page explains what placement guidance usually says, why certain locations appear so often online, and how to think about choosing a practical location that fits naturally into a normal daily routine.</p>
 
-      <p>If you are still learning the basics of the patch itself, it helps to begin with the broader idea behind the product. You can read that here: <a href="https://dmr440.github.io/patch-reference-hub/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a>.</p>
+      <p>If you are still learning the basics of the patch itself, it helps to begin with the broader idea behind the product. You can read that here: <a href="/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a>.</p>
 
       <div class="note">
         <strong>Practical note:</strong> Placement conversations online can sound more rigid than they really are. Many beginners assume there must be one universal “best spot,” but a more useful way to think about placement is comfort, routine, skin condition, and whether the patch stays on well during normal daily use.
@@ -327,9 +511,11 @@
 
       <p>General instructions usually focus on practical routine basics: apply the patch to clean, dry skin, use one patch at a time, wear it for a limited part of the day rather than continuously, and remove and discard it after the recommended wear period. This makes placement part of a simple daily habit rather than something complicated or overly technical.</p>
 
-<p>If you're unsure how long the patch is typically worn each day, this guide explains the common routine in more detail: <a href="https://patchreferencehub.com/how-long-to-wear-x39-patch.html">How Long Should You Wear the X39 Patch Each Day?</a>.</p>
+      <p>For source material, readers should compare this guidance with official manufacturer information and product instructions available from <a href="https://www.lifewave.com/" rel="nofollow noopener noreferrer">LifeWave</a>.</p>
 
-<p>Some people also wonder whether the patch can be worn overnight or while sleeping. If you’re curious about how nighttime use fits into a typical routine, this guide explains that question in more detail: <a href="https://patchreferencehub.com/can-you-wear-x39-at-night.html">Can You Wear the X39 Patch at Night?</a>.</p>
+      <p>If you're unsure how long the patch is typically worn each day, this guide explains the common routine in more detail: <a href="/how-long-to-wear-x39-patch.html">How Long Should You Wear the X39 Patch Each Day?</a>.</p>
+
+      <p>Some people also wonder whether the patch can be worn overnight or while sleeping. If you’re curious about how nighttime use fits into a typical routine, this guide explains that question in more detail: <a href="/can-you-wear-x39-at-night.html">Can You Wear the X39 Patch at Night?</a>.</p>
 
       <p>That is one of the first important things many people do not realise. Placement guidance is often broader than the way it gets repeated online. Instead of framing X39 as requiring one exact point on the body, the guidance is usually presented in terms of example locations and everyday routine.</p>
 
@@ -383,7 +569,7 @@
 
       <p>For readers who are still in the early learning stage, this is another reason not to overcomplicate the first few weeks. The goal is not to create a perfect placement strategy on day one. The goal is to find a simple approach that feels manageable as part of normal life.</p>
 
-      <p>That broader mindset is also reflected in the way many people think about the first month as a whole rather than obsessing over one individual day. If that question is on your mind, this page helps connect the dots: <a href="https://dmr440.github.io/patch-reference-hub/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a>.</p>
+      <p>That broader mindset is also reflected in the way many people think about the first month as a whole rather than obsessing over one individual day. If that question is on your mind, this page helps connect the dots: <a href="/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a>.</p>
 
       <h2>Common beginner placement mistakes</h2>
       <p>Many beginner placement mistakes are surprisingly ordinary. They are less about choosing the “wrong” body part and more about small practical details that get overlooked.</p>
@@ -398,7 +584,7 @@
 
       <p>Ironically, beginners sometimes spend more time worrying about placement than actually building a routine. In practice, consistency often matters more than trying to outsmart the process every day.</p>
 
-      <p>This is also connected to the broader beginner question of how long changes take to become noticeable. When people expect a dramatic moment, they may over-analyse every placement detail. This page helps set that expectation more realistically: <a href="https://dmr440.github.io/patch-reference-hub/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a>.</p>
+      <p>This is also connected to the broader beginner question of how long changes take to become noticeable. When people expect a dramatic moment, they may over-analyse every placement detail. This page helps set that expectation more realistically: <a href="/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a>.</p>
 
       <h2>Why placement discussions can become confusing online</h2>
       <p>One reason placement advice can feel messy is that several different ideas get mixed together online.</p>
@@ -414,7 +600,7 @@
 
       <p>But in practice, experienced users often describe the process differently. A simple, repeatable routine usually matters more than constantly experimenting. Applying the patch at the same time each day, choosing a sensible location, and keeping the process low-stress often creates a much easier overall experience.</p>
 
-      <p>This is also connected to another common beginner question: should you feel something immediately? Many people do not. That is why it helps to read placement in the wider context of expectations, routine, and subtle observation rather than as a search for instant confirmation. For that topic, see: <a href="https://dmr440.github.io/patch-reference-hub/do-you-feel-x39-working.html">Do You Feel X39 Working?</a>.</p>
+      <p>This is also connected to another common beginner question: should you feel something immediately? Many people do not. That is why it helps to read placement in the wider context of expectations, routine, and subtle observation rather than as a search for instant confirmation. For that topic, see: <a href="/do-you-feel-x39-working.html">Do You Feel X39 Working?</a>.</p>
 
       <p>The real “aha” here is that placement is probably best understood as a routine question, not a magic-point question. Once you see it that way, the whole topic becomes much easier to approach calmly.</p>
 
@@ -423,9 +609,9 @@
 
       <p>That may sound almost too simple, but simplicity is often exactly what beginners need. The internet can make placement sound highly technical, but for most people the more useful approach is steady, practical, and realistic.</p>
 
-      <p>If you want to explore the topic from a wider angle, the Patch Reference Hub already covers several related beginner questions, including <a href="https://dmr440.github.io/patch-reference-hub/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a>, <a href="https://dmr440.github.io/patch-reference-hub/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a>, <a href="https://dmr440.github.io/patch-reference-hub/do-you-feel-x39-working.html">Do You Feel X39 Working?</a>, and <a href="https://dmr440.github.io/patch-reference-hub/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a>.</p>
+      <p>If you want to explore the topic from a wider angle, the Patch Reference Hub already covers several related beginner questions, including <a href="/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a>, <a href="/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a>, <a href="/do-you-feel-x39-working.html">Do You Feel X39 Working?</a>, and <a href="/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a>.</p>
 
-      <p>You can also browse additional practical questions in the main <a href="https://dmr440.github.io/patch-reference-hub/faq.html">X39 FAQ hub</a>.</p>
+      <p>You can also browse additional practical questions in the main <a href="/faq.html">X39 FAQ hub</a>.</p>
 
       <div class="faq-box">
         <h2>Related Questions People Often Ask</h2>
@@ -438,19 +624,19 @@
         <div class="continue-grid">
           <div class="continue-card">
             <span class="continue-label">Related Guide</span>
-            <a href="https://dmr440.github.io/patch-reference-hub/how-x39-is-designed-to-work.html"><strong>How X39 Is Designed to Work</strong></a>
+            <a href="/how-x39-is-designed-to-work.html"><strong>How X39 Is Designed to Work</strong></a>
           </div>
           <div class="continue-card">
             <span class="continue-label">Related Guide</span>
-            <a href="https://dmr440.github.io/patch-reference-hub/how-long-to-notice-x39.html"><strong>How Long Does It Take to Notice Changes With X39?</strong></a>
+            <a href="/how-long-to-notice-x39.html"><strong>How Long Does It Take to Notice Changes With X39?</strong></a>
           </div>
           <div class="continue-card">
             <span class="continue-label">Related Guide</span>
-            <a href="https://dmr440.github.io/patch-reference-hub/do-you-feel-x39-working.html"><strong>Do You Feel X39 Working?</strong></a>
+            <a href="/do-you-feel-x39-working.html"><strong>Do You Feel X39 Working?</strong></a>
           </div>
           <div class="continue-card">
             <span class="continue-label">Previous Page</span>
-            <a href="https://dmr440.github.io/patch-reference-hub/first-30-days-x39.html"><strong>What Should You Expect in the First 30 Days With X39?</strong></a>
+            <a href="/first-30-days-x39.html"><strong>What Should You Expect in the First 30 Days With X39?</strong></a>
           </div>
         </div>
       </div>
@@ -458,7 +644,29 @@
   </main>
 
   <div class="footer">
-    <p>This page is part of the Patch Reference Hub FAQ and education series.</p>
+    <div class="footer-card">
+      <p><strong>Publisher:</strong> Dave Ross ; New Zealand</p>
+      <p><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/faq.html">FAQs</a>
+      </div>
+
+      <div class="social-links" aria-label="Public profiles">
+        <a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a>
+        <a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a>
+        <a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a>
+      </div>
+
+      <p><strong>Disclosure:</strong> Patch Reference Hub may earn a commission from qualifying referrals.</p>
+      <p><strong>Medical disclaimer:</strong> This site is for educational purposes only and does not provide medical advice. Individual experiences vary. Follow the manufacturer’s instructions and speak with a qualified healthcare professional about personal health questions.</p>
+      <p>Patch Reference Hub is an independent informational website created by a LifeWave Brand Partner and is not an official LifeWave corporate website.</p>
+    </div>
   </div>
 </body>
 </html>
