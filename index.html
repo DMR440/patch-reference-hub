@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="arnz8fMMGsBDFW-cunvpnEXxRSeWnuwAAz8diQABudE" />
 
-  <title>Patch Reference Hub | LifeWave Patch Questions and X39 Guides</title>
-  <meta name="description" content="Patch Reference Hub is an independent educational resource created by Dave Ross. Explore LifeWave patch questions, X39 beginner guides, placement topics, daily routines, and practical FAQs." />
+  <title>Patch Reference Hub | X39 Beginner Guides, Placement Questions, and LifeWave Patch FAQs</title>
+  <meta name="description" content="Patch Reference Hub is an independent educational resource by Dave Ross. Read beginner-friendly X39 guides covering patch placement, daily routines, wear time, first 30 days, and common LifeWave questions." />
   <link rel="canonical" href="https://patchreferencehub.com/" />
 
   <!-- Google Tag Manager -->
@@ -39,13 +39,13 @@
       --accent: #405e7c;
       --accent-dark: #203247;
       --accent-soft: #eaf1f7;
+      --highlight: #f6f9fc;
       --shadow: 0 10px 30px rgba(38, 55, 77, 0.08);
       --radius: 18px;
       --max: 1100px;
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -184,13 +184,29 @@
       max-width: 860px;
     }
 
+    .disclosure-box,
+    .note,
+    .answer-box {
+      border-radius: 14px;
+      padding: 18px;
+      margin: 22px 0;
+    }
+
+    .disclosure-box {
+      background: #fff8e8;
+      border: 1px solid #eadbb2;
+      color: #534321;
+    }
+
     .note {
       background: var(--accent-soft);
       border: 1px solid #d6e4f0;
-      border-radius: 14px;
-      padding: 18px;
-      margin: 24px 0;
       color: #30465d;
+    }
+
+    .answer-box {
+      background: var(--highlight);
+      border: 1px solid var(--border);
     }
 
     .trust-box {
@@ -201,7 +217,8 @@
     }
 
     .trust-panel,
-    .meta-panel {
+    .meta-panel,
+    .info-panel {
       border: 1px solid var(--border);
       border-radius: 16px;
       background: var(--surface-soft);
@@ -269,18 +286,29 @@
 
     .list-clean li,
     .link-list li {
-      margin-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .link-summary {
+      display: block;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
     }
 
     .mini-list a {
       display: block;
-      margin-bottom: 9px;
+      margin-bottom: 14px;
       color: var(--text);
       text-decoration: none;
+      font-weight: 700;
     }
 
-    .mini-list a:hover {
-      text-decoration: underline;
+    .mini-list a span {
+      display: block;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 4px;
     }
 
     .social-links,
@@ -294,6 +322,19 @@
     .social-links a,
     .footer-links a {
       white-space: nowrap;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      padding: 18px;
     }
 
     .footer {
@@ -319,7 +360,8 @@
     @media (max-width: 900px) {
       .grid-three,
       .grid-two,
-      .trust-box {
+      .trust-box,
+      .faq-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -402,7 +444,7 @@
         "@id": "https://patchreferencehub.com/#webpage",
         "url": "https://patchreferencehub.com/",
         "name": "Patch Reference Hub",
-        "description": "Independent educational resource created by Dave Ross covering LifeWave patch questions, X39 beginner guides, placement topics, daily routines, and practical FAQs.",
+        "description": "Independent educational resource by Dave Ross covering LifeWave patch questions, X39 beginner guides, patch placement topics, routines, wear time, and practical FAQs.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://patchreferencehub.com/#website"
@@ -418,7 +460,11 @@
           },
           {
             "@type": "Thing",
-            "name": "phototherapy patches"
+            "name": "patch placement"
+          },
+          {
+            "@type": "Thing",
+            "name": "beginner patch routines"
           }
         ],
         "author": {
@@ -460,23 +506,24 @@
       <span class="eyebrow">Independent educational resource</span>
       <h1>Patch Reference Hub</h1>
       <p class="intro">
-        Patch Reference Hub is an independent educational website for people researching LifeWave patches, X39 beginner questions, placement topics, daily routines, and practical product FAQs.
+        Patch Reference Hub is an independent educational website for people researching LifeWave patches, X39 beginner questions, placement topics, daily routines, wear time, and practical product FAQs.
       </p>
+
+      <div class="disclosure-box">
+        <strong>Disclosure:</strong> Patch Reference Hub is published by Dave Ross, a LifeWave Brand Partner in New Zealand. Some pages may include referral links, which means the site may earn a commission if a reader chooses to buy through them. This site is written as an educational reference for beginners and is not an official LifeWave corporate website.
+      </div>
 
       <div class="trust-box">
         <div class="trust-panel">
-          <h2>About Patch Reference Hub</h2>
+          <h2>What this site is for</h2>
           <p>
-            Patch Reference Hub is published by <strong>Dave Ross</strong>, a LifeWave Brand Partner based in New Zealand. The site was created to help readers understand common beginner questions through clear guides focused on placement, routines, expectations, and everyday use.
+            Most people do not start with technical language. They start with simple questions. What is X39 described as? Where do people commonly place it? How long do people usually wait before they feel like they can say anything useful about it? What is the first month usually like? This homepage is built to answer those beginner questions clearly, then point you to the deeper page for each topic.
           </p>
           <p>
-            Articles are based on manufacturer information, Dave Ross's personal experience using the patches since early 2025, and recurring questions discussed in user communities.
+            The goal here is not to give medical advice or make treatment claims. The goal is to help readers sort through common patch questions using plain language, practical examples, and clear navigation. That includes placement pages, wear-time guides, first-30-day expectation pages, and other beginner articles that explain what people usually want to understand before they try to build a routine.
           </p>
           <p>
-            <strong>Disclosure:</strong> Some pages may include referral links. Patch Reference Hub is an independent informational website and is not an official LifeWave corporate website.
-          </p>
-          <p>
-            <strong>Medical disclaimer:</strong> This website is for educational purposes only. It does not provide medical advice, diagnosis, or treatment. Read the full <a href="/medical-disclaimer.html">medical disclaimer here</a>.
+            Articles on this site are based on a mix of manufacturer information, Dave Ross's personal use experience since early 2025, and repeated beginner questions that come up in communities, product discussions, and direct reader interest. When a topic is best answered by official manufacturer instructions, this site points readers back to those instructions rather than pretending to replace them.
           </p>
         </div>
 
@@ -485,7 +532,8 @@
           <p class="meta"><strong>Publisher:</strong> Dave Ross</p>
           <p class="meta"><strong>Country:</strong> New Zealand</p>
           <p class="meta"><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-          <p class="meta"><strong>Focus:</strong> LifeWave patch questions, X39 beginner guides, routines, and reference content</p>
+          <p class="meta"><strong>Focus:</strong> LifeWave patch questions, X39 beginner guides, routines, wear time, and reference content</p>
+          <p class="meta"><strong>Site type:</strong> Independent educational reference</p>
 
           <div class="social-links" aria-label="Public profiles">
             <a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a>
@@ -496,13 +544,40 @@
         </aside>
       </div>
 
+      <div class="answer-box">
+        <h2>Beginner overview</h2>
+        <p>
+          <strong>What X39 is described as:</strong> LifeWave describes X39 as a non-transdermal wellness patch. On this site, the beginner focus is not on repeating sales language. It is on helping readers understand how the product is commonly described, what official instructions say, and which questions usually matter first.
+        </p>
+        <p>
+          <strong>Where people commonly place it:</strong> Beginners usually start by asking about placement. The practical issue is not finding one magic spot. It is understanding the commonly discussed placement areas, reading the official guidance, and building a repeatable routine instead of guessing every day.
+        </p>
+        <p>
+          <strong>How long people often take to notice anything:</strong> Readers often want a fixed timeline. In practice, experiences vary. Some people feel ready to comment sooner; others need longer before they think a routine feels consistent enough to judge. That is why the site separates early expectations from longer-term routine questions.
+        </p>
+        <p>
+          <strong>What the first 30 days are usually like:</strong> The first month is usually less about dramatic conclusions and more about consistency. Readers often spend that period working out where to place the patch, how long to wear it, how to compare different days, and how to avoid over-reading every small change.
+        </p>
+      </div>
+
+      <div class="info-panel">
+        <h2>Why this site exists</h2>
+        <p>
+          This site was built because beginner questions tend to repeat. People search for direct answers, but many pages online are either too vague, too promotional, or too scattered to help them build a simple starting point. Patch Reference Hub tries to fix that by giving each major question its own page and by explaining the topic in straightforward language before the reader clicks deeper.
+        </p>
+        <p>
+          That means this homepage is not just a directory. It is the starting page for understanding the core beginner path: what X39 is usually described as, where placement questions begin, what the early routine period looks like, and which pages answer the next most common questions.
+        </p>
+      </div>
+
       <div class="note">
-        <strong>Start here:</strong> If you are new to this topic, begin with the basic explanation pages and the most common X39 beginner questions. That gives readers a clear path from first overview to practical day-to-day use topics.
+        <strong>Medical disclaimer:</strong> This website is for educational purposes only. It does not provide medical advice, diagnosis, or treatment. Follow official product instructions and speak with a qualified healthcare professional about personal health questions. Read the full <a href="/medical-disclaimer.html">medical disclaimer here</a>.
       </div>
 
       <div class="cta-row">
         <a class="button primary" href="/faq.html">Start with the FAQ</a>
         <a class="button" href="/how-x39-is-designed-to-work.html">Read the X39 basics</a>
+        <a class="button" href="/about.html">Read about this site</a>
       </div>
     </section>
 
@@ -510,35 +585,68 @@
       <article class="card">
         <h2>Popular starting points</h2>
         <ul class="list-clean">
-          <li><a href="/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a></li>
-          <li><a href="/where-do-you-place-x39-patch.html">Where Do You Place the X39 Patch?</a></li>
-          <li><a href="/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a></li>
-          <li><a href="/do-you-feel-x39-working.html">Do You Feel X39 Working?</a></li>
-          <li><a href="/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a></li>
+          <li>
+            <a href="/how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a>
+            <span class="link-summary">A plain-language starting page explaining how the product is commonly described and what beginners usually need to understand first.</span>
+          </li>
+          <li>
+            <a href="/where-do-you-place-x39-patch.html">Where Do You Place the X39 Patch?</a>
+            <span class="link-summary">A practical placement guide focused on common starting locations, routine consistency, and why beginners should compare official instructions.</span>
+          </li>
+          <li>
+            <a href="/how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a>
+            <span class="link-summary">A beginner page about timelines, expectations, and why experiences differ from person to person.</span>
+          </li>
+          <li>
+            <a href="/do-you-feel-x39-working.html">Do You Feel X39 Working?</a>
+            <span class="link-summary">A direct answer page about what readers usually mean when they ask whether they are supposed to feel anything.</span>
+          </li>
+          <li>
+            <a href="/first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a>
+            <span class="link-summary">A first-month guide that explains routine-building, common beginner questions, and realistic expectations.</span>
+          </li>
         </ul>
       </article>
 
       <article class="card">
         <h2>Start with the basics</h2>
         <p>
-          If you are new to this topic, begin with the core explanation pages. These guides explain how the patch category is usually described and what readers commonly want to understand first.
+          These pages explain the basic frame around the product category before you get into placement and routine questions.
         </p>
         <div class="mini-list">
-          <a href="/designed-to-support.html">What they are designed to support</a>
-          <a href="/what-they-are-not.html">What these patches are not</a>
-          <a href="/about-this-product.html">About this product</a>
+          <a href="/designed-to-support.html">
+            What they are designed to support
+            <span>A simple explanation of the support language readers usually see around these patches and how to read it carefully.</span>
+          </a>
+          <a href="/what-they-are-not.html">
+            What these patches are not
+            <span>A clarification page that helps beginners separate product descriptions from assumptions and overstatements.</span>
+          </a>
+          <a href="/about-this-product.html">
+            About this product
+            <span>An overview page for readers who want context before they move into placement, wear time, and routine questions.</span>
+          </a>
         </div>
       </article>
 
       <article class="card">
         <h2>X39 beginner guides</h2>
         <p>
-          Many readers start with the X39 patch. These pages answer common beginner questions about placement, routine, and expectations using direct language and practical framing.
+          These are the pages most new readers visit first when they want practical answers.
         </p>
         <div class="mini-list">
-          <a href="/where-do-you-place-x39-patch.html">Where do you place the X39 patch?</a>
-          <a href="/how-long-to-notice-x39.html">How long does it take to notice changes with X39?</a>
-          <a href="/do-you-feel-x39-working.html">Do you feel X39 working?</a>
+          <a href="/where-do-you-place-x39-patch.html">
+            Where do you place the X39 patch?
+            <span>Placement basics, commonly discussed locations, and a practical starting point for beginners.</span>
+          </a>
+          <a href="/how-long-to-notice-x39.html">
+            How long does it take to notice changes with X39?
+            <span>Timeline context for readers who want to know how long people usually wait before forming an opinion.</span>
+          </a>
+          <a href="/do-you-feel-x39-working.html">
+            Do you feel X39 working?
+            <span>A straightforward page about sensation questions, expectations, and why not everyone describes the experience the same way.</span>
+          </a>
         </div>
       </article>
     </section>
@@ -547,27 +655,70 @@
       <article class="card">
         <h2>Daily use and routine topics</h2>
         <p>
-          After the basics, most readers move into routine questions. These pages are designed to help people compare instructions, habits, and practical usage questions without exaggerated claims.
+          Once readers understand the basics, they usually move into practical routine questions.
         </p>
         <ul class="link-list">
-          <li><a href="/daily-routines.html">Daily routines</a></li>
-          <li><a href="/first-30-days-x39.html">What should you expect in the first 30 days with X39?</a></li>
-          <li><a href="/how-long-to-wear-x39-patch.html">How long do you wear the X39 patch?</a></li>
+          <li>
+            <a href="/daily-routines.html">Daily routines</a>
+            <span class="link-summary">How readers often structure day-to-day use and keep their approach simple.</span>
+          </li>
+          <li>
+            <a href="/first-30-days-x39.html">What should you expect in the first 30 days with X39?</a>
+            <span class="link-summary">A first-month page focused on consistency, observation, and realistic beginner framing.</span>
+          </li>
+          <li>
+            <a href="/how-long-to-wear-x39-patch.html">How long do you wear the X39 patch?</a>
+            <span class="link-summary">A wear-time guide for readers trying to compare instructions with common beginner questions.</span>
+          </li>
         </ul>
       </article>
 
       <article class="card">
         <h2>Site transparency</h2>
         <p>
-          This site is built as an educational reference resource. The goal is to answer common questions clearly, show who publishes the site, and make trust pages easy to find.
+          Trust pages matter on a health-adjacent site. These pages explain who publishes Patch Reference Hub, how the site is funded, and how to contact the publisher directly.
         </p>
         <div class="mini-list">
-          <a href="/about.html">About Patch Reference Hub</a>
-          <a href="/contact.html">Contact the publisher</a>
-          <a href="/disclosure.html">Read the disclosure</a>
-          <a href="/medical-disclaimer.html">Read the medical disclaimer</a>
+          <a href="/about.html">
+            About Patch Reference Hub
+            <span>Learn who built the site, why it exists, and how the content is framed.</span>
+          </a>
+          <a href="/contact.html">
+            Contact the publisher
+            <span>Use the contact page to reach Dave Ross directly with site questions.</span>
+          </a>
+          <a href="/disclosure.html">
+            Read the disclosure
+            <span>See the affiliate and Brand Partner disclosure in full plain language.</span>
+          </a>
+          <a href="/medical-disclaimer.html">
+            Read the medical disclaimer
+            <span>Understand the limits of the content and why the site does not replace professional advice.</span>
+          </a>
         </div>
       </article>
+    </section>
+
+    <section class="card section-gap">
+      <h2>Common beginner questions answered here</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Where do beginners usually start?</h3>
+          <p>Most readers start with the X39 basics, then move to placement, wear time, and first-30-day expectation pages.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is this an official LifeWave website?</h3>
+          <p>No. Patch Reference Hub is an independent educational website created by a LifeWave Brand Partner.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does this site give medical advice?</h3>
+          <p>No. The site is informational only and points readers back to official instructions and healthcare professionals for personal health decisions.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why are there separate pages for placement, wear time, and the first 30 days?</h3>
+          <p>Because beginners usually search for those topics separately, and each one needs a direct answer rather than a vague general overview.</p>
+        </div>
+      </div>
     </section>
   </main>
 
