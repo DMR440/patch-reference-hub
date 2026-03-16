@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editorial Policy | Patch Reference Hub</title>
+  <meta name="description" content="Read the editorial policy for Patch Reference Hub, including how articles are created, what sources are used, how personal experience is labeled, and how updates and corrections are handled." />
+  <link rel="canonical" href="https://patchreferencehub.com/editorial-policy.html" />
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfe;
+      --text: #1f2937;
+      --muted: #586273;
+      --border: #d8e1eb;
+      --accent: #35516b;
+      --accent-dark: #213447;
+      --accent-soft: #eaf2f8;
+      --gold-bg: #fff8e7;
+      --gold-border: #ebd7a8;
+      --green-bg: #eef8f1;
+      --green-border: #cfe3d5;
+      --blue-bg: #f2f7fc;
+      --blue-border: #d8e7f5;
+      --shadow: 0 10px 30px rgba(36, 53, 74, 0.08);
+      --radius: 18px;
+      --max: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fbfe 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 220px;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .brand-tag {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 30px auto 56px;
+      padding: 0 18px;
+    }
+
+    .hero,
+    .section-card,
+    .footer-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      overflow: hidden;
+    }
+
+    .hero-top {
+      padding: 34px 30px 30px;
+      background:
+        radial-gradient(circle at top right, rgba(83, 127, 167, 0.12), transparent 36%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .section-card {
+      margin-top: 18px;
+      padding: 24px 22px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-dark);
+      line-height: 1.22;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      font-size: 1.06rem;
+      color: #334155;
+    }
+
+    .banner {
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .banner.disclosure {
+      background: var(--blue-bg);
+      border: 1px solid var(--blue-border);
+    }
+
+    .banner.medical {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+    }
+
+    .checklist {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .checklist li {
+      margin-bottom: 10px;
+    }
+
+    .meta-block {
+      border-top: 1px solid var(--border);
+      margin-top: 18px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto 50px;
+      padding: 0 18px;
+    }
+
+    .footer-card {
+      padding: 22px 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 10px 0 16px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-wrap {
+        padding: 14px 16px;
+      }
+
+      .hero-top,
+      .section-card,
+      .footer-card {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://patchreferencehub.com/editorial-policy.html#webpage",
+        "url": "https://patchreferencehub.com/editorial-policy.html",
+        "name": "Editorial Policy",
+        "description": "Editorial policy for Patch Reference Hub, including how content is written, reviewed, updated, sourced, and corrected.",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "name": "Dave Ross"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Patch Reference Hub",
+          "url": "https://patchreferencehub.com/"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "editorial policy"
+          },
+          {
+            "@type": "Thing",
+            "name": "content standards"
+          },
+          {
+            "@type": "Thing",
+            "name": "source transparency"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <a class="brand-title" href="/">Patch Reference Hub</a>
+        <span class="brand-tag">Independent; beginner-focused; educational</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html" aria-current="page">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-top">
+        <span class="eyebrow">Content standards</span>
+        <h1>Editorial Policy</h1>
+        <p class="lead">
+          Patch Reference Hub is an independent educational website created to answer common beginner questions about LifeWave X39 patches and related topics in clear, plain language. This page explains how content is written, what sources are used, how personal experience is labeled, and how updates and corrections are handled.
+        </p>
+
+        <div class="banner disclosure">
+          <strong>Editorial scope:</strong> Patch Reference Hub is written for beginners. It is designed to explain common questions, organize information clearly, and distinguish between official manufacturer material, personal experience, and general educational explanation.
+        </div>
+
+        <div class="banner medical">
+          <strong>Medical limitation:</strong> Patch Reference Hub does not provide medical advice, diagnosis, or treatment. Content is written for educational purposes only and should not replace qualified healthcare guidance.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>How topics are chosen</h2>
+      <p>
+        Topics on Patch Reference Hub are selected based on the questions beginners most commonly ask when researching LifeWave X39 patches and related routine topics.
+      </p>
+      <p>
+        These topics often include:
+      </p>
+      <ul class="checklist">
+        <li>where the patch is commonly placed</li>
+        <li>how long it is usually worn</li>
+        <li>what the first few days or weeks are like for beginners</li>
+        <li>how product language is commonly described</li>
+        <li>what official materials say compared with general discussion</li>
+      </ul>
+      <p>
+        The goal is to answer beginner questions directly and clearly without overstating certainty or presenting promotional claims as settled fact.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>How content is written</h2>
+      <p>
+        Articles on Patch Reference Hub are written by Dave Ross. Content is drafted in plain language with a focus on clarity, structure, and practical usefulness for beginners.
+      </p>
+      <p>
+        The site aims to do three things well:
+      </p>
+      <ul class="checklist">
+        <li>answer the beginner question directly</li>
+        <li>make the source or basis of the answer clear</li>
+        <li>distinguish between educational explanation, official product information, and personal experience</li>
+      </ul>
+      <p>
+        When a short answer can be given honestly, the page should provide it. When a topic depends on official instructions or source-specific details, readers are encouraged to verify those details directly with the manufacturer or other primary sources.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>What sources are used</h2>
+      <p>
+        Content on Patch Reference Hub may draw from a mix of the following source types:
+      </p>
+      <ul class="checklist">
+        <li>official manufacturer materials</li>
+        <li>publicly available product information</li>
+        <li>instruction or usage materials where relevant</li>
+        <li>clearly labeled personal experience from Dave Ross</li>
+        <li>general educational explanations written for beginners</li>
+      </ul>
+      <p>
+        When a page refers to a factual product instruction or description, readers should treat the manufacturer source as the most important point of verification.
+      </p>
+      <p>
+        Where appropriate, pages may identify source type in plain language such as:
+      </p>
+      <ul class="checklist">
+        <li><strong>Official source</strong></li>
+        <li><strong>Personal experience</strong></li>
+        <li><strong>General educational explanation</strong></li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>How personal experience is handled</h2>
+      <p>
+        Patch Reference Hub may include personal experience from Dave Ross as a beginner user of X39. When that happens, the experience should be presented honestly and within its proper limits.
+      </p>
+      <p>
+        Personal experience is not treated as medical evidence, clinical proof, or a universal result. It is included only as one clearly labeled perspective that may help a reader understand how a beginner might think about the topic.
+      </p>
+      <p>
+        The site does not present personal experience as a substitute for official instructions or professional advice.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>How commercial relationships are handled</h2>
+      <p>
+        Dave Ross is a LifeWave Brand Partner, and some links on Patch Reference Hub may generate referral commissions.
+      </p>
+      <p>
+        That relationship is disclosed clearly because readers should understand when a financial connection exists.
+      </p>
+      <p>
+        The presence of referral links does not change the site's editorial goal, which is to provide clear beginner-focused educational content.
+      </p>
+      <p>
+        Details about the funding model are explained on the <a href="/how-this-site-is-funded.html">How This Site Is Funded page</a>, and broader commercial transparency is explained on the <a href="/disclosure.html">Disclosure page</a>.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>How updates and corrections are handled</h2>
+      <p>
+        Patch Reference Hub may update pages when:
+      </p>
+      <ul class="checklist">
+        <li>official product information changes</li>
+        <li>clarity or wording needs improvement</li>
+        <li>a factual error is discovered</li>
+        <li>a page needs stronger source labeling or transparency</li>
+      </ul>
+      <p>
+        When a significant change is made, the page may be reviewed and updated to reflect the most current wording or structure needed for clarity.
+      </p>
+      <p>
+        If a reader notices an error or believes something on the site should be corrected, they are encouraged to contact the publisher directly.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>What this editorial policy does not claim</h2>
+      <p>
+        This editorial policy is intended to explain how Patch Reference Hub approaches content. It does not claim that the site is a medical journal, clinical authority, or professional healthcare publication.
+      </p>
+      <ul class="checklist">
+        <li>The site does not provide medical advice.</li>
+        <li>The site does not diagnose or treat medical conditions.</li>
+        <li>The site does not present manufacturer claims as independent clinical proof.</li>
+        <li>The site does not guarantee that every page will answer every question without readers checking source materials.</li>
+      </ul>
+      <p>
+        The purpose of the site is narrower and simpler: to help beginners understand common questions more clearly.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Contact for corrections or editorial questions</h2>
+      <p>
+        If you have a correction request, sourcing question, or editorial concern, you can contact the publisher directly.
+      </p>
+      <p>
+        <strong>Dave Ross</strong><br />
+        Email: <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a>
+      </p>
+
+      <div class="meta-block">
+        <strong>Page purpose:</strong> Editorial standards and content process<br />
+        <strong>Publisher:</strong> Dave Ross<br />
+        <strong>Last reviewed:</strong> March 16, 2026
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-card">
+      <p><strong>Patch Reference Hub</strong> is an independent educational website published by Dave Ross in New Zealand.</p>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+      </div>
+
+      <p><strong>Funding disclosure:</strong> Some links on this site may generate referral commissions because the publisher is a LifeWave Brand Partner.</p>
+      <p><strong>Medical disclaimer:</strong> This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment.</p>
+    </div>
+  </footer>
+</body>
+</html>
