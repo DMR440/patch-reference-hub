@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How Patch Reference Hub Is Funded</title>
+  <meta name="description" content="Learn how Patch Reference Hub is funded, how referral commissions work, and how commercial relationships are disclosed and handled on the site." />
+  <link rel="canonical" href="https://patchreferencehub.com/how-this-site-is-funded.html" />
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfe;
+      --text: #1f2937;
+      --muted: #586273;
+      --border: #d8e1eb;
+      --accent: #35516b;
+      --accent-dark: #213447;
+      --accent-soft: #eaf2f8;
+      --gold-bg: #fff8e7;
+      --gold-border: #ebd7a8;
+      --green-bg: #eef8f1;
+      --green-border: #cfe3d5;
+      --shadow: 0 10px 30px rgba(36, 53, 74, 0.08);
+      --radius: 18px;
+      --max: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fbfe 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 220px;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .brand-tag {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 30px auto 56px;
+      padding: 0 18px;
+    }
+
+    .hero,
+    .section-card,
+    .footer-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      overflow: hidden;
+    }
+
+    .hero-top {
+      padding: 34px 30px 30px;
+      background:
+        radial-gradient(circle at top right, rgba(83, 127, 167, 0.12), transparent 36%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .section-card {
+      margin-top: 18px;
+      padding: 24px 22px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-dark);
+      line-height: 1.22;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      font-size: 1.06rem;
+      color: #334155;
+    }
+
+    .banner {
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .banner.disclosure {
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      color: #53421d;
+    }
+
+    .banner.medical {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+    }
+
+    .checklist {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .checklist li {
+      margin-bottom: 10px;
+    }
+
+    .meta-block {
+      border-top: 1px solid var(--border);
+      margin-top: 18px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto 50px;
+      padding: 0 18px;
+    }
+
+    .footer-card {
+      padding: 22px 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 10px 0 16px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-wrap {
+        padding: 14px 16px;
+      }
+
+      .hero-top,
+      .section-card,
+      .footer-card {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://patchreferencehub.com/how-this-site-is-funded.html#webpage",
+        "url": "https://patchreferencehub.com/how-this-site-is-funded.html",
+        "name": "How Patch Reference Hub Is Funded",
+        "description": "Explanation of how Patch Reference Hub is funded, including referral commissions, Brand Partner status, and editorial independence.",
+        "inLanguage": "en",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "affiliate disclosure"
+          },
+          {
+            "@type": "Thing",
+            "name": "site funding"
+          },
+          {
+            "@type": "Thing",
+            "name": "editorial independence"
+          }
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Dave Ross"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Patch Reference Hub",
+          "url": "https://patchreferencehub.com/"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <a class="brand-title" href="/">Patch Reference Hub</a>
+        <span class="brand-tag">Independent; beginner-focused; educational</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html" aria-current="page">How This Site Is Funded</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-top">
+        <span class="eyebrow">Site transparency</span>
+        <h1>How Patch Reference Hub Is Funded</h1>
+        <p class="lead">
+          Patch Reference Hub is an independent educational website created and maintained by Dave Ross in New Zealand. This page explains how the site is funded, how referral commissions work, and how commercial relationships are disclosed and handled.
+        </p>
+
+        <div class="banner disclosure">
+          <strong>Important disclosure:</strong> Dave Ross is a LifeWave Brand Partner. That means some links on this website may generate a commission if a reader chooses to make a purchase through a qualifying referral link.
+        </div>
+
+        <div class="banner medical">
+          <strong>Important context:</strong> Patch Reference Hub is not an official LifeWave corporate website and does not provide medical advice. The site is intended as a beginner-focused educational resource.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Why this page exists</h2>
+      <p>
+        Transparency matters, especially on a website that discusses a health-adjacent wellness product. Readers should be able to understand when a financial relationship exists, what that relationship is, and how it affects the site.
+      </p>
+      <p>
+        Patch Reference Hub is built to answer common beginner questions in plain language. Because the site is operated by a LifeWave Brand Partner, it is important to explain that relationship clearly and directly rather than burying it in small print.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Brand Partner relationship</h2>
+      <p>
+        Dave Ross is a LifeWave Brand Partner.
+      </p>
+      <p>
+        This means that if a reader chooses to purchase LifeWave products through a referral link on this website, Dave Ross may earn a commission from that purchase through the LifeWave Brand Partner program.
+      </p>
+      <p>
+        That commercial relationship is disclosed throughout the site so readers understand the connection between the publisher and the product being discussed.
+      </p>
+      <p>
+        Patch Reference Hub is operated independently and is not an official LifeWave corporate website.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>How referral commissions work</h2>
+      <p>
+        Some pages on this site may include links to official LifeWave pages or related resources. If a reader chooses to make a purchase through certain qualifying links, Dave Ross may receive a commission.
+      </p>
+      <p>
+        These commissions help cover the basic costs of running the site, including:
+      </p>
+
+      <ul class="checklist">
+        <li>website hosting</li>
+        <li>domain registration</li>
+        <li>content development</li>
+        <li>site maintenance and updates</li>
+      </ul>
+
+      <p>
+        Not every page exists to promote a purchase. Many pages are informational and are written to answer beginner questions whether or not a reader ever clicks a referral link.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Editorial independence</h2>
+      <p>
+        The purpose of Patch Reference Hub is to help readers understand common beginner questions about LifeWave X39 patches and related topics in clear, practical language.
+      </p>
+      <p>
+        Content on this site is based on a mix of:
+      </p>
+
+      <ul class="checklist">
+        <li>personal experience as a beginner user of X39</li>
+        <li>common beginner questions</li>
+        <li>publicly available manufacturer materials</li>
+        <li>plain-language educational explanations</li>
+      </ul>
+
+      <p>
+        The existence of referral commissions does not change the site's basic editorial purpose. Articles are written to help readers understand the topic, not to pressure them into making a purchase.
+      </p>
+      <p>
+        When official product instructions are the best source for a factual answer, readers are encouraged to verify those details directly with the manufacturer.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>What this site does not do</h2>
+      <p>
+        Patch Reference Hub is a beginner-oriented educational resource. It does not claim to replace healthcare professionals or official manufacturer instructions.
+      </p>
+
+      <ul class="checklist">
+        <li>It does not provide medical advice.</li>
+        <li>It does not diagnose or treat medical conditions.</li>
+        <li>It does not claim that LifeWave products cure, prevent, or treat disease.</li>
+        <li>It does not replace guidance from qualified healthcare professionals.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Questions about funding</h2>
+      <p>
+        If you have questions about how Patch Reference Hub is funded or how referral relationships are handled on the site, you can contact the publisher directly.
+      </p>
+
+      <p>
+        <strong>Dave Ross</strong><br />
+        Email: <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a>
+      </p>
+
+      <div class="meta-block">
+        <strong>Page purpose:</strong> Funding transparency and affiliate disclosure<br />
+        <strong>Publisher:</strong> Dave Ross<br />
+        <strong>Last reviewed:</strong> March 16, 2026
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-card">
+      <p><strong>Patch Reference Hub</strong> is an independent educational website published by Dave Ross in New Zealand.</p>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+      </div>
+
+      <p><strong>Funding disclosure:</strong> Some links on this site may generate referral commissions because the publisher is a LifeWave Brand Partner.</p>
+      <p><strong>Medical disclaimer:</strong> This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment.</p>
+    </div>
+  </footer>
+</body>
+</html>
