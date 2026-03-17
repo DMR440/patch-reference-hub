@@ -1,15 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="arnz8fMMGsBDFW-cunvpnEXxRSeWnuwAAz8diQABudE" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#213447" />
 
   <title>About Patch Reference Hub | Dave Ross</title>
-  <meta name="description" content="Learn about Patch Reference Hub, the publisher Dave Ross, how the site is researched, and how LifeWave patch guides are written." />
+  <meta name="description" content="About Patch Reference Hub, published by Dave Ross. Learn how the site is created, researched, and how LifeWave X39 beginner content is structured." />
   <link rel="canonical" href="https://patchreferencehub.com/about.html" />
 
-  <!-- Google Tag Manager -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="About Patch Reference Hub | Dave Ross" />
+  <meta property="og:description" content="About Patch Reference Hub, its publisher Dave Ross, and how the site explains LifeWave X39 beginner topics." />
+  <meta property="og:url" content="https://patchreferencehub.com/about.html" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About Patch Reference Hub | Dave Ross" />
+  <meta name="twitter:description" content="About Patch Reference Hub and how the site explains LifeWave X39 beginner questions." />
+
+  <!-- GTM -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,306 +30,154 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KRPRL9LC');
   </script>
-  <!-- End Google Tag Manager -->
 
-  <!-- Google tag (gtag.js) -->
+  <!-- gtag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZTLYEMQMD"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.dataLayer = window.dataLayer || [];
     gtag('js', new Date());
     gtag('config', 'G-KZTLYEMQMD');
   </script>
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      margin: 0;
-      color: #111;
-      background: #fafafa;
-      line-height: 1.65;
-    }
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 18px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0 18px;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #111;
-      opacity: 0.78;
-      white-space: nowrap;
-    }
-    nav a:hover,
-    a:hover {
-      opacity: 1;
-      text-decoration: underline;
-    }
-    .card {
-      background: #fff;
-      border: 1px solid #eaeaea;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-    }
-    h1 {
-      font-size: 34px;
-      line-height: 1.12;
-      margin: 8px 0 10px;
-    }
-    h2 {
-      font-size: 22px;
-      margin: 0 0 10px;
-      line-height: 1.2;
-    }
-    h3 {
-      font-size: 17px;
-      margin: 0 0 8px;
-    }
-    p {
-      margin: 0 0 14px;
-    }
-    .sub {
-      font-size: 16px;
-      opacity: 0.82;
-      margin: 0 0 16px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 14px;
-    }
-    @media (min-width: 760px) {
-      .grid-two {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    ul {
-      margin: 10px 0 0 18px;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .pill {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 8px;
-      border: 1px solid #eee;
-      border-radius: 999px;
-      background: #fff;
-      opacity: 0.9;
-    }
-    .meta {
-      font-size: 14px;
-      color: #333;
-    }
-    .meta strong {
-      color: #111;
-    }
-    .social a {
-      margin-right: 12px;
-      white-space: nowrap;
-    }
-    footer {
-      margin-top: 18px;
-      font-size: 13px;
-      opacity: 0.8;
-    }
-  </style>
-
+  <!-- Schema (CONNECTED TO HOMEPAGE) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Patch Reference Hub",
-    "url": "https://patchreferencehub.com/about.html",
-    "description": "About Patch Reference Hub, its publisher Dave Ross, and how the site researches LifeWave patch guides.",
-    "inLanguage": "en",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Dave Ross",
-      "jobTitle": "Publisher",
-      "homeLocation": {
-        "@type": "Country",
-        "name": "New Zealand"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://patchreferencehub.com/#organization",
+        "name": "Patch Reference Hub",
+        "url": "https://patchreferencehub.com/",
+        "email": "dave@patchreferencehub.com"
       },
-      "sameAs": [
-        "https://www.linkedin.com/in/dave-ross-69245727/",
-        "https://nz.pinterest.com/Patch_Reference_Hub/",
-        "https://www.facebook.com/Patch.Reference.Hub",
-        "https://www.instagram.com/patch_reference_hub/",
-        "https://lifewave.com/DMR440"
-      ]
-    },
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Patch Reference Hub",
-      "url": "https://patchreferencehub.com/"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dave Ross",
-    "jobTitle": "Publisher",
-    "url": "https://patchreferencehub.com/about.html",
-    "homeLocation": {
-      "@type": "Country",
-      "name": "New Zealand"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/dave-ross-69245727/",
-      "https://nz.pinterest.com/Patch_Reference_Hub/",
-      "https://www.facebook.com/Patch.Reference.Hub",
-      "https://www.instagram.com/patch_reference_hub/",
-      "https://lifewave.com/DMR440"
+      {
+        "@type": "Person",
+        "@id": "https://patchreferencehub.com/#person",
+        "name": "Dave Ross",
+        "jobTitle": "Publisher",
+        "homeLocation": {
+          "@type": "Country",
+          "name": "New Zealand"
+        },
+        "worksFor": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/dave-ross-69245727/",
+          "https://nz.pinterest.com/Patch_Reference_Hub/",
+          "https://www.facebook.com/Patch.Reference.Hub",
+          "https://www.instagram.com/patch_reference_hub/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://patchreferencehub.com/about.html#webpage",
+        "url": "https://patchreferencehub.com/about.html",
+        "name": "About Patch Reference Hub",
+        "isPartOf": {
+          "@id": "https://patchreferencehub.com/#website"
+        },
+        "author": {
+          "@id": "https://patchreferencehub.com/#person"
+        },
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        }
+      }
     ]
   }
   </script>
 </head>
 
 <body>
-  <div class="wrap">
 
-    <header>
-      <div>
-        <div style="font-weight:700;">Patch Reference Hub</div>
-        <div class="pill">About the site ; publisher ; research approach</div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQs</a>
-        <a href="designed-to-support.html">Designed to Support</a>
-        <a href="what-they-are-not.html">What It Isn’t</a>
-        <a href="daily-routines.html">Daily Routines</a>
-        <a href="about-this-product.html">About This Product</a>
-        <a href="learn-more.html">Learn More</a>
-      </nav>
-    </header>
+<header style="padding:16px;border-bottom:1px solid #eee;">
+  <strong>Patch Reference Hub</strong>
+  <nav style="margin-top:8px;">
+    <a href="/index.html">Home</a> |
+    <a href="/about.html">About</a> |
+    <a href="/contact.html">Contact</a> |
+    <a href="/faq.html">FAQ</a> |
+    <a href="/disclosure.html">Disclosure</a> |
+    <a href="/medical-disclaimer.html">Medical Disclaimer</a> |
+    <a href="/privacy-policy.html">Privacy Policy</a> |
+    <a href="/editorial-policy.html">Editorial Policy</a> |
+    <a href="/how-this-site-is-funded.html">Funding</a>
+  </nav>
+</header>
 
-    <main>
-      <section class="card">
-        <h1>About Patch Reference Hub</h1>
-        <p class="sub">Patch Reference Hub is an independent informational website that documents common questions about LifeWave patches, especially X39 beginner topics, placement questions, and day-to-day routine guidance.</p>
+<main style="max-width:900px;margin:20px auto;padding:16px;">
 
-        <p>The site was created to make this topic easier to understand. Many people researching LifeWave patches run into the same early questions. They want to know where patches are placed, how the product is commonly described, what daily use may look like, and where official guidance ends and user discussion begins.</p>
+<h1>About Patch Reference Hub</h1>
 
-        <p>Patch Reference Hub was built to answer those questions in a direct, readable format without exaggerated language.</p>
-      </section>
+<p>
+Patch Reference Hub is an independent educational website focused on beginner questions about LifeWave X39 patches. The purpose of the site is to answer common questions clearly, without exaggerated claims or unnecessary complexity.
+</p>
 
-      <div class="grid grid-two">
-        <section class="card">
-          <h2>About the publisher</h2>
-          <p><strong>Dave Ross</strong> is the publisher of Patch Reference Hub and a LifeWave Brand Partner based in New Zealand.</p>
+<p>
+The site focuses on practical topics such as placement, wear time, and early routine expectations. It also separates manufacturer descriptions, personal experience, and general educational explanation so readers can understand the difference.
+</p>
 
-          <p>Dave has used LifeWave patches since early 2025. This website was created to document common beginner questions, organize recurring topics into clear guides, and help readers compare official product information with practical day-to-day usage questions.</p>
+<h2>About the publisher</h2>
 
-          <p class="meta"><strong>Publisher:</strong> Dave Ross</p>
-          <p class="meta"><strong>Country:</strong> New Zealand</p>
-          <p class="meta"><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-        </section>
+<p>
+<strong>Dave Ross</strong> is the publisher of Patch Reference Hub and a LifeWave Brand Partner based in New Zealand.
+</p>
 
-        <section class="card">
-          <h2>Disclosure</h2>
-          <p>Dave Ross is a LifeWave Brand Partner. Patch Reference Hub may include referral links to LifeWave products. If a reader chooses to purchase through one of those links, Dave may receive a commission.</p>
+<p>
+Dave began researching and using X39 in early 2025. This site was created to document beginner questions, organise recurring topics, and provide a clear reference point for new readers.
+</p>
 
-          <p>This site is not an official LifeWave corporate website. It is an independent informational resource created to explain common patch questions and reference topics more clearly.</p>
+<p>
+This website is based on direct usage experience, publicly available manufacturer materials, and clearly labelled educational explanations.
+</p>
 
-          <p>This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment claims.</p>
-        </section>
-      </div>
+<p>
+<strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a>
+</p>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>How the site is researched</h2>
-        <p>Content on Patch Reference Hub is written using a combination of sources and observations:</p>
-        <ul>
-          <li>manufacturer information published by LifeWave</li>
-          <li>personal experience using the patches since early 2025</li>
-          <li>common questions and recurring themes discussed in user communities</li>
-          <li>practical beginner concerns such as placement, routine, consistency, and expectations</li>
-        </ul>
+<h2>Disclosure</h2>
 
-        <p>When a topic relates to manufacturer instructions, the goal is to explain those instructions clearly. When a topic includes discussion from user communities, the goal is to separate user discussion from official product information so readers can understand the difference.</p>
-      </section>
+<p>
+Patch Reference Hub may include referral links. If a reader chooses to purchase through a qualifying link, a commission may be earned. This does not change how content is written.
+</p>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>What Patch Reference Hub covers</h2>
-        <div class="grid grid-two">
-          <div>
-            <h3>Main topic areas</h3>
-            <ul>
-              <li>X39 beginner questions</li>
-              <li>patch placement topics</li>
-              <li>daily routine and consistency questions</li>
-              <li>common FAQ topics for new readers</li>
-              <li>basic product explanation pages</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Examples of guides</h3>
-            <ul>
-              <li><a href="where-do-you-place-x39-patch.html">Where Do You Place the X39 Patch?</a></li>
-              <li><a href="how-long-to-notice-x39.html">How Long Does It Take to Notice Changes With X39?</a></li>
-              <li><a href="do-you-feel-x39-working.html">Do You Feel X39 Working?</a></li>
-              <li><a href="first-30-days-x39.html">What Should You Expect in the First 30 Days With X39?</a></li>
-              <li><a href="how-x39-is-designed-to-work.html">How X39 Is Designed to Work</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<p>
+This is not an official LifeWave corporate website. It is an independent educational resource.
+</p>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>Editorial approach</h2>
-        <p>Patch Reference Hub is written for readers who want plain explanations. The aim is to answer common questions clearly, avoid hype, and keep the difference between official product information, personal experience, and general discussion visible on the page.</p>
+<h2>How content is created</h2>
 
-        <p>This means the site focuses on:</p>
-        <ul>
-          <li>clear definitions</li>
-          <li>simple article structure</li>
-          <li>direct answers to common questions</li>
-          <li>realistic language around expectations</li>
-          <li>transparent disclosure of financial relationships</li>
-        </ul>
-      </section>
+<ul>
+<li>Official LifeWave materials where relevant</li>
+<li>Personal usage experience</li>
+<li>Common beginner questions</li>
+<li>Clear separation of source types</li>
+</ul>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>Connect with Patch Reference Hub</h2>
-        <p>Public profiles connected to the site:</p>
-        <p class="social">
-          <a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a>
-          <a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a>
-          <a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a>
-          <a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a>
-          <a href="https://lifewave.com/DMR440" rel="noopener noreferrer">LifeWave</a>
-        </p>
-      </section>
-    </main>
+<h2>What this site covers</h2>
 
-    <footer>
-      <p><strong>Publisher:</strong> Dave Ross ; New Zealand</p>
-      <p><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-      <p>Patch Reference Hub is an independent informational website created by a LifeWave Brand Partner. This site is for educational purposes only and does not provide medical advice.</p>
-    </footer>
+<ul>
+<li>X39 beginner questions</li>
+<li>Placement guidance</li>
+<li>Daily routine structure</li>
+<li>First 30 days expectations</li>
+</ul>
 
-  </div>
+<h2>Important note</h2>
+
+<p>
+This site is for educational purposes only and does not provide medical advice. Always refer to official materials and consult a qualified healthcare professional for personal health decisions.
+</p>
+
+</main>
+
+<footer style="padding:20px;border-top:1px solid #eee;">
+<p><strong>Patch Reference Hub</strong> ; Dave Ross ; New Zealand</p>
+<p><a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+</footer>
+
 </body>
 </html>
