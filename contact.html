@@ -1,15 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="arnz8fMMGsBDFW-cunvpnEXxRSeWnuwAAz8diQABudE" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#213447" />
 
   <title>Contact Patch Reference Hub | Dave Ross</title>
-  <meta name="description" content="Contact Patch Reference Hub and publisher Dave Ross for general website questions and reference page feedback." />
+  <meta name="description" content="Contact Patch Reference Hub and publisher Dave Ross for website questions, corrections, and feedback." />
   <link rel="canonical" href="https://patchreferencehub.com/contact.html" />
 
-  <!-- Google Tag Manager -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Patch Reference Hub | Dave Ross" />
+  <meta property="og:description" content="Contact Patch Reference Hub for website questions, feedback, and corrections." />
+  <meta property="og:url" content="https://patchreferencehub.com/contact.html" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact Patch Reference Hub | Dave Ross" />
+  <meta name="twitter:description" content="Contact Patch Reference Hub for website questions and feedback." />
+
+  <!-- GTM -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,195 +30,129 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KRPRL9LC');
   </script>
-  <!-- End Google Tag Manager -->
 
-  <!-- Google tag (gtag.js) -->
+  <!-- gtag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZTLYEMQMD"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.dataLayer = window.dataLayer || [];
     gtag('js', new Date());
     gtag('config', 'G-KZTLYEMQMD');
   </script>
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      margin: 0;
-      color: #111;
-      background: #fafafa;
-      line-height: 1.65;
-    }
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 18px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0 18px;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #111;
-      opacity: 0.78;
-      white-space: nowrap;
-    }
-    nav a:hover,
-    a:hover {
-      opacity: 1;
-      text-decoration: underline;
-    }
-    .card {
-      background: #fff;
-      border: 1px solid #eaeaea;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-    }
-    h1 {
-      font-size: 34px;
-      line-height: 1.12;
-      margin: 8px 0 10px;
-    }
-    h2 {
-      font-size: 22px;
-      margin: 0 0 10px;
-      line-height: 1.2;
-    }
-    p {
-      margin: 0 0 14px;
-    }
-    .sub {
-      font-size: 16px;
-      opacity: 0.82;
-      margin: 0 0 16px;
-    }
-    .pill {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 8px;
-      border: 1px solid #eee;
-      border-radius: 999px;
-      background: #fff;
-      opacity: 0.9;
-    }
-    .meta {
-      font-size: 15px;
-      color: #333;
-    }
-    .meta strong {
-      color: #111;
-    }
-    .social a {
-      margin-right: 12px;
-      white-space: nowrap;
-    }
-    footer {
-      margin-top: 18px;
-      font-size: 13px;
-      opacity: 0.8;
-    }
-  </style>
-
+  <!-- CONNECTED SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact Patch Reference Hub",
-    "url": "https://patchreferencehub.com/contact.html",
-    "description": "Contact page for Patch Reference Hub and publisher Dave Ross.",
-    "inLanguage": "en",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Dave Ross",
-      "jobTitle": "Publisher",
-      "homeLocation": {
-        "@type": "Country",
-        "name": "New Zealand"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://patchreferencehub.com/#organization",
+        "name": "Patch Reference Hub",
+        "url": "https://patchreferencehub.com/",
+        "email": "dave@patchreferencehub.com"
       },
-      "email": "mailto:dave@patchreferencehub.com"
-    },
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Patch Reference Hub",
-      "url": "https://patchreferencehub.com/"
-    }
+      {
+        "@type": "Person",
+        "@id": "https://patchreferencehub.com/#person",
+        "name": "Dave Ross",
+        "jobTitle": "Publisher",
+        "email": "dave@patchreferencehub.com",
+        "homeLocation": {
+          "@type": "Country",
+          "name": "New Zealand"
+        },
+        "worksFor": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/dave-ross-69245727/",
+          "https://nz.pinterest.com/Patch_Reference_Hub/",
+          "https://www.facebook.com/Patch.Reference.Hub",
+          "https://www.instagram.com/patch_reference_hub/"
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://patchreferencehub.com/contact.html#webpage",
+        "url": "https://patchreferencehub.com/contact.html",
+        "name": "Contact Patch Reference Hub",
+        "isPartOf": {
+          "@id": "https://patchreferencehub.com/#website"
+        },
+        "author": {
+          "@id": "https://patchreferencehub.com/#person"
+        },
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        }
+      }
+    ]
   }
   </script>
 </head>
 
 <body>
-  <div class="wrap">
 
-    <header>
-      <div>
-        <div style="font-weight:700;">Patch Reference Hub</div>
-        <div class="pill">Contact ; publisher details ; website questions</div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQs</a>
-        <a href="daily-routines.html">Daily Routines</a>
-        <a href="learn-more.html">Learn More</a>
-      </nav>
-    </header>
+<header style="padding:16px;border-bottom:1px solid #eee;">
+  <strong>Patch Reference Hub</strong>
+  <nav style="margin-top:8px;">
+    <a href="/index.html">Home</a> |
+    <a href="/about.html">About</a> |
+    <a href="/contact.html">Contact</a> |
+    <a href="/faq.html">FAQ</a> |
+    <a href="/disclosure.html">Disclosure</a> |
+    <a href="/medical-disclaimer.html">Medical Disclaimer</a> |
+    <a href="/privacy-policy.html">Privacy Policy</a> |
+    <a href="/editorial-policy.html">Editorial Policy</a> |
+    <a href="/how-this-site-is-funded.html">Funding</a>
+  </nav>
+</header>
 
-    <main>
-      <section class="card">
-        <h1>Contact Patch Reference Hub</h1>
-        <p class="sub">For general website questions, feedback, and corrections, you can contact the publisher directly.</p>
+<main style="max-width:900px;margin:20px auto;padding:16px;">
 
-        <p class="meta"><strong>Publisher:</strong> Dave Ross</p>
-        <p class="meta"><strong>Country:</strong> New Zealand</p>
-        <p class="meta"><strong>Email:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-      </section>
+<h1>Contact Patch Reference Hub</h1>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>What to contact this site about</h2>
-        <p>You can use this email for:</p>
-        <ul>
-          <li>general questions about Patch Reference Hub</li>
-          <li>corrections to published pages</li>
-          <li>broken link reports</li>
-          <li>questions about disclosures or publisher information</li>
-          <li>website feedback</li>
-        </ul>
-      </section>
+<p>
+For general website questions, feedback, corrections, or content clarification, you can contact the publisher directly.
+</p>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>Important note</h2>
-        <p>Patch Reference Hub is an educational reference website. This site does not provide medical advice, diagnosis, or treatment recommendations. For medical questions, speak with a qualified healthcare professional.</p>
-      </section>
+<p><strong>Publisher:</strong> Dave Ross</p>
+<p><strong>Country:</strong> New Zealand</p>
+<p><strong>Email:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
 
-      <section class="card" style="margin-top:14px;">
-        <h2>Public profiles</h2>
-        <p class="social">
-          <a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a>
-          <a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a>
-          <a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a>
-          <a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a>
-        </p>
-      </section>
-    </main>
+<h2>What to contact this site about</h2>
 
-    <footer>
-      <p><strong>Publisher:</strong> Dave Ross ; New Zealand</p>
-      <p><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-      <p>Patch Reference Hub is an independent informational website created by a LifeWave Brand Partner. This site is for educational purposes only and does not provide medical advice.</p>
-    </footer>
+<ul>
+<li>general questions about the website</li>
+<li>corrections or updates to content</li>
+<li>broken links or technical issues</li>
+<li>questions about disclosures or site policies</li>
+<li>general feedback</li>
+</ul>
 
-  </div>
+<h2>Important note</h2>
+
+<p>
+Patch Reference Hub is an educational website and does not provide medical advice, diagnosis, or treatment recommendations. For personal health questions, consult a qualified healthcare professional.
+</p>
+
+<h2>Public profiles</h2>
+
+<p>
+<a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a><br>
+<a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a><br>
+<a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a><br>
+<a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a>
+</p>
+
+</main>
+
+<footer style="padding:20px;border-top:1px solid #eee;">
+<p><strong>Patch Reference Hub</strong> ; Dave Ross ; New Zealand</p>
+<p><a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+<p>This site is an independent educational resource and does not provide medical advice.</p>
+</footer>
+
 </body>
 </html>
