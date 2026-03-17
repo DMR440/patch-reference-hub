@@ -11,18 +11,18 @@
   <meta name="description" content="Contact Patch Reference Hub and publisher Dave Ross for website questions, corrections, and feedback." />
   <link rel="canonical" href="https://patchreferencehub.com/contact.html" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:site_name" content="Patch Reference Hub" />
   <meta property="og:title" content="Contact Patch Reference Hub | Dave Ross" />
-  <meta property="og:description" content="Contact Patch Reference Hub for website questions, feedback, and corrections." />
+  <meta property="og:description" content="Contact Patch Reference Hub for website questions, corrections, and feedback." />
   <meta property="og:url" content="https://patchreferencehub.com/contact.html" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Contact Patch Reference Hub | Dave Ross" />
-  <meta name="twitter:description" content="Contact Patch Reference Hub for website questions and feedback." />
+  <meta name="twitter:description" content="Contact Patch Reference Hub for website questions, corrections, and feedback." />
 
-  <!-- GTM -->
+  <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,16 +31,340 @@
     })(window,document,'script','dataLayer','GTM-KRPRL9LC');
   </script>
 
-  <!-- gtag -->
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZTLYEMQMD"></script>
   <script>
-    function gtag(){dataLayer.push(arguments);}
     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-KZTLYEMQMD');
   </script>
 
-  <!-- CONNECTED SCHEMA -->
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfe;
+      --text: #1f2937;
+      --muted: #586273;
+      --border: #d8e1eb;
+      --accent: #35516b;
+      --accent-dark: #213447;
+      --accent-soft: #eaf2f8;
+      --gold-bg: #fff8e7;
+      --gold-border: #ebd7a8;
+      --green-bg: #eef8f1;
+      --green-border: #cfe3d5;
+      --blue-bg: #f2f7fc;
+      --blue-border: #d8e7f5;
+      --shadow: 0 10px 30px rgba(36, 53, 74, 0.08);
+      --radius: 18px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fbfe 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 220px;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .brand-tag {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 28px auto 56px;
+      padding: 0 18px;
+    }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-top {
+      padding: 34px 30px 28px;
+      background:
+        radial-gradient(circle at top right, rgba(83, 127, 167, 0.12), transparent 36%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-dark);
+      line-height: 1.22;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.65rem;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.06rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #334155;
+      max-width: 920px;
+    }
+
+    .hero-grid,
+    .section-grid-2 {
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1.4fr 0.95fr;
+      margin-top: 22px;
+    }
+
+    .section-grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .panel,
+    .mini-panel,
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      padding: 22px;
+      background: var(--surface-soft);
+      box-shadow: none;
+    }
+
+    .mini-panel {
+      padding: 20px;
+      box-shadow: none;
+      background: #fff;
+    }
+
+    .card {
+      padding: 26px 22px;
+    }
+
+    .banner {
+      border-radius: 16px;
+      padding: 18px;
+      margin: 18px 0 0;
+    }
+
+    .banner p:last-child,
+    .panel p:last-child,
+    .mini-panel p:last-child,
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .banner.disclosure {
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      color: #53421d;
+    }
+
+    .banner.medical {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+    }
+
+    .kicker {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .meta-line {
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+      color: #334155;
+    }
+
+    .meta-line strong {
+      color: var(--accent-dark);
+    }
+
+    .social-links,
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto 50px;
+      padding: 0 18px;
+    }
+
+    .footer-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .section-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-wrap {
+        padding: 14px 16px;
+      }
+
+      .hero-top,
+      .card {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.26rem;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,7 +374,15 @@
         "@id": "https://patchreferencehub.com/#organization",
         "name": "Patch Reference Hub",
         "url": "https://patchreferencehub.com/",
-        "email": "dave@patchreferencehub.com"
+        "email": "dave@patchreferencehub.com",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "dave@patchreferencehub.com",
+            "availableLanguage": ["English"]
+          }
+        ]
       },
       {
         "@type": "Person",
@@ -73,10 +405,22 @@
         ]
       },
       {
+        "@type": "WebSite",
+        "@id": "https://patchreferencehub.com/#website",
+        "url": "https://patchreferencehub.com/",
+        "name": "Patch Reference Hub",
+        "inLanguage": "en-NZ",
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        }
+      },
+      {
         "@type": "ContactPage",
         "@id": "https://patchreferencehub.com/contact.html#webpage",
         "url": "https://patchreferencehub.com/contact.html",
         "name": "Contact Patch Reference Hub",
+        "description": "Contact page for Patch Reference Hub and publisher Dave Ross.",
+        "inLanguage": "en-NZ",
         "isPartOf": {
           "@id": "https://patchreferencehub.com/#website"
         },
@@ -93,66 +437,131 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRPRL9LC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<header style="padding:16px;border-bottom:1px solid #eee;">
-  <strong>Patch Reference Hub</strong>
-  <nav style="margin-top:8px;">
-    <a href="/index.html">Home</a> |
-    <a href="/about.html">About</a> |
-    <a href="/contact.html">Contact</a> |
-    <a href="/faq.html">FAQ</a> |
-    <a href="/disclosure.html">Disclosure</a> |
-    <a href="/medical-disclaimer.html">Medical Disclaimer</a> |
-    <a href="/privacy-policy.html">Privacy Policy</a> |
-    <a href="/editorial-policy.html">Editorial Policy</a> |
-    <a href="/how-this-site-is-funded.html">Funding</a>
-  </nav>
-</header>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <a class="brand-title" href="/">Patch Reference Hub</a>
+        <span class="brand-tag">Independent; beginner-focused; educational</span>
+      </div>
 
-<main style="max-width:900px;margin:20px auto;padding:16px;">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>Contact Patch Reference Hub</h1>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-top">
+        <span class="eyebrow">Contact and accountability</span>
+        <h1>Contact Patch Reference Hub</h1>
+        <p class="lead">
+          For general website questions, corrections, broken link reports, or feedback about published content, you can contact the publisher directly.
+        </p>
 
-<p>
-For general website questions, feedback, corrections, or content clarification, you can contact the publisher directly.
-</p>
+        <div class="banner disclosure">
+          <strong>Important note:</strong> Patch Reference Hub is an independent educational website published by Dave Ross, a LifeWave Brand Partner in New Zealand. This contact page is for website-related questions and feedback. It is not a medical support channel.
+        </div>
 
-<p><strong>Publisher:</strong> Dave Ross</p>
-<p><strong>Country:</strong> New Zealand</p>
-<p><strong>Email:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+        <div class="hero-grid">
+          <div class="panel">
+            <h2>How to get in touch</h2>
+            <p>
+              The fastest way to contact this site is by email. Questions about corrections, links, disclosures, or page clarity are all appropriate to send here.
+            </p>
+            <p class="meta-line"><strong>Publisher:</strong> Dave Ross</p>
+            <p class="meta-line"><strong>Country:</strong> New Zealand</p>
+            <p class="meta-line"><strong>Email:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+          </div>
 
-<h2>What to contact this site about</h2>
+          <aside class="mini-panel" aria-label="Public profiles">
+            <span class="kicker">Public profiles</span>
+            <p class="meta-line"><a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a></p>
+            <p class="meta-line"><a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a></p>
+            <p class="meta-line"><a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a></p>
+            <p class="meta-line"><a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a></p>
+          </aside>
+        </div>
 
-<ul>
-<li>general questions about the website</li>
-<li>corrections or updates to content</li>
-<li>broken links or technical issues</li>
-<li>questions about disclosures or site policies</li>
-<li>general feedback</li>
-</ul>
+        <div class="banner medical">
+          <strong>Medical disclaimer:</strong> Patch Reference Hub is an educational website and does not provide medical advice, diagnosis, or treatment recommendations. For personal health questions, consult a qualified healthcare professional.
+        </div>
+      </div>
+    </section>
 
-<h2>Important note</h2>
+    <section class="section section-grid-2">
+      <article class="card">
+        <h2>What to contact this site about</h2>
+        <ul>
+          <li>general questions about Patch Reference Hub</li>
+          <li>corrections or updates to published pages</li>
+          <li>broken link reports or technical issues</li>
+          <li>questions about disclosures or site policies</li>
+          <li>general feedback about clarity or usability</li>
+        </ul>
+      </article>
 
-<p>
-Patch Reference Hub is an educational website and does not provide medical advice, diagnosis, or treatment recommendations. For personal health questions, consult a qualified healthcare professional.
-</p>
+      <article class="card">
+        <h2>What this contact page is not for</h2>
+        <ul>
+          <li>medical advice requests</li>
+          <li>diagnosis or treatment recommendations</li>
+          <li>urgent health questions</li>
+          <li>official LifeWave corporate support</li>
+        </ul>
+        <p style="margin-top:14px;">
+          If your question is medical or product-safety related, the appropriate next step is to consult a qualified healthcare professional and review official manufacturer materials directly.
+        </p>
+      </article>
+    </section>
 
-<h2>Public profiles</h2>
+    <section class="section">
+      <div class="card">
+        <h2>Related site pages</h2>
+        <div class="social-links" aria-label="Related pages">
+          <a href="/about.html">About</a>
+          <a href="/disclosure.html">Disclosure</a>
+          <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/editorial-policy.html">Editorial Policy</a>
+          <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<p>
-<a href="https://www.linkedin.com/in/dave-ross-69245727/" rel="me noopener noreferrer">LinkedIn</a><br>
-<a href="https://nz.pinterest.com/Patch_Reference_Hub/" rel="me noopener noreferrer">Pinterest</a><br>
-<a href="https://www.facebook.com/Patch.Reference.Hub" rel="me noopener noreferrer">Facebook</a><br>
-<a href="https://www.instagram.com/patch_reference_hub/" rel="me noopener noreferrer">Instagram</a>
-</p>
+  <footer class="footer">
+    <div class="footer-card">
+      <p><strong>Patch Reference Hub</strong> is an independent educational website published by Dave Ross in New Zealand.</p>
+      <p><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
 
-</main>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+      </div>
 
-<footer style="padding:20px;border-top:1px solid #eee;">
-<p><strong>Patch Reference Hub</strong> ; Dave Ross ; New Zealand</p>
-<p><a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
-<p>This site is an independent educational resource and does not provide medical advice.</p>
-</footer>
-
+      <p><strong>Funding disclosure:</strong> Some links may generate referral commissions because the publisher is a LifeWave Brand Partner.</p>
+      <p><strong>Medical disclaimer:</strong> This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment.</p>
+      <p><strong>Last reviewed:</strong> March 17, 2026</p>
+    </div>
+  </footer>
 </body>
 </html>
