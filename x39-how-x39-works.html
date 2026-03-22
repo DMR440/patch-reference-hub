@@ -1,97 +1,610 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KRPRL9LC');
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Search Console verification -->
-  <meta name="google-site-verification" content="wOsmM0vF9QYCT-G7p26HOqeVjBPTjIHT0oQnRzkHfoE" />
+<meta name="google-site-verification" content="arnz8fMMGsBDFW-cunvpnEXxRSeWnuwAAz8diQABudE" /> <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /> <meta name="theme-color" content="#213447" /> <!-- Google Tag Manager --> <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KRPRL9LC'); </script> <!-- Google tag --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZTLYEMQMD"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KZTLYEMQMD'); </script>
 
   <title>How Does the X39 Patch Work?</title>
   <meta name="description" content="A neutral explanation of what people mean by “work” when asking about the LifeWave X39 patch. Focuses on interpretation, expectations, and common misunderstandings without hype or promises." />
-  <link rel="canonical" href="https://dmr440.github.io/patch-reference-hub/x39-how-x39-works.html" />
+  <link rel="canonical" href="https://patchreferencehub.com/x39-how-x39-works.html" />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:site_name" content="Patch Reference Hub" />
   <meta property="og:title" content="How Does the X39 Patch Work?" />
   <meta property="og:description" content="A calm, neutral explanation focused on expectations and interpretation — not hype." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dmr440.github.io/patch-reference-hub/x39-how-x39-works.html" />
+  <meta property="og:url" content="https://patchreferencehub.com/x39-how-x39-works.html" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="How Does the X39 Patch Work?" />
   <meta name="twitter:description" content="A neutral explanation focused on interpretation and expectations." />
 
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#111;background:#fafafa}
-    .wrap{max-width:920px;margin:0 auto;padding:18px}
-    header{display:flex;justify-content:space-between;align-items:center;padding:10px 0 18px;flex-wrap:wrap;gap:10px}
-    nav a{margin-left:10px;text-decoration:none;color:#111;opacity:.75;white-space:nowrap}
-    nav a:hover{opacity:1}
-    .card{background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:18px;box-shadow:0 4px 16px rgba(0,0,0,.04)}
-    h1{font-size:32px;line-height:1.15;margin:8px 0 6px}
-    .sub{font-size:16px;opacity:.75;margin:0 0 14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
-    @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
-    h2{font-size:18px;margin:0 0 8px}
-    ul{margin:10px 0 0 18px}
-    footer{margin-top:18px;font-size:12px;opacity:.7}
-    .pill{display:inline-block;font-size:12px;padding:4px 8px;border:1px solid #eee;border-radius:999px;background:#fff;opacity:.85}
-    .note{background:#fcfcfc;border:1px solid #eee;border-radius:12px;padding:14px;margin-top:12px}
-    .links a{color:#111;opacity:.85}
-    .links a:hover{opacity:1}
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfe;
+      --text: #1f2937;
+      --muted: #586273;
+      --border: #d8e1eb;
+      --accent: #35516b;
+      --accent-dark: #213447;
+      --accent-soft: #eaf2f8;
+      --gold-bg: #fff8e7;
+      --gold-border: #ebd7a8;
+      --green-bg: #eef8f1;
+      --green-border: #cfe3d5;
+      --blue-bg: #f2f7fc;
+      --blue-border: #d8e7f5;
+      --shadow: 0 10px 30px rgba(36, 53, 74, 0.08);
+      --radius: 18px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fbfe 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 220px;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .brand-tag {
+      display: inline-block;
+      width: fit-content;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 28px auto 56px;
+      padding: 0 18px;
+    }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-top {
+      padding: 34px 30px 28px;
+      background:
+        radial-gradient(circle at top right, rgba(83, 127, 167, 0.12), transparent 36%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-dark);
+      line-height: 1.22;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.65rem;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.06rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #334155;
+      max-width: 920px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.95fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .panel,
+    .mini-panel,
+    .card,
+    .faq-card,
+    .source-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      padding: 22px;
+      background: var(--surface-soft);
+      box-shadow: none;
+    }
+
+    .mini-panel {
+      padding: 20px;
+      box-shadow: none;
+      background: #fff;
+    }
+
+    .banner {
+      border-radius: 16px;
+      padding: 18px;
+      margin: 18px 0 0;
+    }
+
+    .banner p:last-child,
+    .panel p:last-child,
+    .mini-panel p:last-child,
+    .card p:last-child,
+    .faq-card p:last-child,
+    .source-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .banner.disclosure {
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      color: #53421d;
+    }
+
+    .banner.evidence {
+      background: var(--blue-bg);
+      border: 1px solid var(--blue-border);
+    }
+
+    .banner.medical {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .fact {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent-dark);
+    }
+
+    .source-note {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 15px;
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--accent-dark);
+      color: #fff;
+      border-color: var(--accent-dark);
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section-grid-2,
+    .section-grid-3,
+    .faq-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .section-grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 26px 22px;
+    }
+
+    .answer-block {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+
+    .answer-block:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .summary-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+
+    .kicker {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .meta-line {
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+      color: #334155;
+    }
+
+    .meta-line strong {
+      color: var(--accent-dark);
+    }
+
+    .social-links,
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .topic-link {
+      display: block;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .topic-link:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .topic-link strong {
+      display: block;
+      color: var(--accent-dark);
+      margin-bottom: 4px;
+    }
+
+    .topic-link span {
+      color: var(--muted);
+      display: block;
+      font-weight: 400;
+    }
+
+    .timeline {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .timeline li {
+      margin-bottom: 12px;
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-card {
+      padding: 20px;
+    }
+
+    .source-card {
+      padding: 22px;
+      background: #fbfdff;
+    }
+
+    .source-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .source-list li {
+      margin-bottom: 12px;
+    }
+
+    .review-meta {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: #334155;
+    }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto 36px;
+      padding: 0 18px;
+    }
+
+    .footer-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 24px 22px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    em {
+      color: #334155;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .section-grid-2,
+      .section-grid-3,
+      .faq-grid,
+      .quick-facts {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.15rem;
+      }
+
+      .hero-top {
+        padding: 28px 22px 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-wrap {
+        padding: 14px 16px;
+      }
+
+      .page {
+        padding: 0 14px;
+      }
+
+      .footer {
+        padding: 0 14px;
+      }
+
+      .card,
+      .panel,
+      .mini-panel,
+      .faq-card,
+      .source-card,
+      .footer-card {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
   </style>
 
-  <!-- JSON-LD: WebPage -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"How Does the X39 Patch Work?",
-    "description":"A neutral explanation of what people mean by “work” when asking about the LifeWave X39 patch. Focuses on interpretation, expectations, and common misunderstandings without hype or promises.",
-    "inLanguage":"en",
-    "url":"https://dmr440.github.io/patch-reference-hub/x39-how-x39-works.html",
-    "isPartOf":{"@type":"WebSite","name":"Patch Reference Hub","url":"https://dmr440.github.io/patch-reference-hub/"}
-  }
-  </script>
-
-  <!-- JSON-LD: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"Question",
-        "name":"How does the X39 patch work?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Most people are really asking how to interpret the product category and what “work” means in a wellness context. This page focuses on expectations, routine-based use, and common misunderstandings rather than promises."
+        "@type": "Organization",
+        "@id": "https://patchreferencehub.com/#organization",
+        "name": "Patch Reference Hub",
+        "url": "https://patchreferencehub.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://patchreferencehub.com/favicon.png"
         }
       },
       {
-        "@type":"Question",
-        "name":"Why do explanations online feel inconsistent?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Because people use words like “work” and “results” differently, and personal interpretations often get shared without context. Category clarity and realistic expectations help reduce confusion."
+        "@type": "WebSite",
+        "@id": "https://patchreferencehub.com/#website",
+        "url": "https://patchreferencehub.com/",
+        "name": "Patch Reference Hub",
+        "description": "Independent educational resource covering LifeWave patch questions, X39 beginner guides, placement topics, wear time, first 30 days, FAQs, and site transparency pages.",
+        "inLanguage": "en-NZ",
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
         }
       },
       {
-        "@type":"Question",
-        "name":"How do people evaluate wellness tools fairly?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"By focusing on consistency, keeping expectations realistic, and separating how a product is positioned from what someone hopes it will do."
-        }
+        "@type": "WebPage",
+        "@id": "https://patchreferencehub.com/x39-how-x39-works.html#webpage",
+        "url": "https://patchreferencehub.com/x39-how-x39-works.html",
+        "name": "How Does the X39 Patch Work?",
+        "description": "A neutral explanation of what people mean by “work” when asking about the LifeWave X39 patch. Focuses on interpretation, expectations, and common misunderstandings without hype or promises.",
+        "inLanguage": "en-NZ",
+        "isPartOf": {
+          "@id": "https://patchreferencehub.com/#website"
+        },
+        "publisher": {
+          "@id": "https://patchreferencehub.com/#organization"
+        },
+        "about": [
+          { "@type": "Thing", "name": "LifeWave X39 patch" },
+          { "@type": "Thing", "name": "wellness routines" },
+          { "@type": "Thing", "name": "routine-based use" },
+          { "@type": "Thing", "name": "expectations" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://patchreferencehub.com/x39-how-x39-works.html#faq",
+        "url": "https://patchreferencehub.com/x39-how-x39-works.html#faq",
+        "inLanguage": "en-NZ",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the X39 patch work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people are really asking how to interpret the product category and what “work” means in a wellness context. This page focuses on expectations, routine-based use, and common misunderstandings rather than promises."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do explanations online feel inconsistent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because people use words like “work” and “results” differently, and personal interpretations often get shared without context. Category clarity and realistic expectations help reduce confusion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do people evaluate wellness tools fairly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By focusing on consistency, keeping expectations realistic, and separating how a product is positioned from what someone hopes it will do."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://patchreferencehub.com/x39-how-x39-works.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://patchreferencehub.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "How Does the X39 Patch Work?",
+            "item": "https://patchreferencehub.com/x39-how-x39-works.html"
+          }
+        ]
       }
     ]
   }
@@ -99,53 +612,99 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRPRL9LC"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 
-  <div class="wrap">
-    <header>
-      <div>
-        <div style="font-weight:700;">Patch Reference Hub</div>
-        <div class="pill">Clear • non-hyped • informational</div>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRPRL9LC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <a class="brand-title" href="/">Patch Reference Hub</a>
+        <span class="brand-tag">Independent; beginner-focused; educational</span>
       </div>
-      <nav>
-        <a href="https://dmr440.github.io/patch-reference-hub/index.html">Home</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/designed-to-support.html">Designed to Support</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/what-they-are-not.html">What It Isn’t</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/daily-routines.html">Daily Routines</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/faq.html">FAQs</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/about-this-product.html">About This Product</a>
-        <a href="https://dmr440.github.io/patch-reference-hub/learn-more.html">Learn More</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="card">
-      <h1>How Does the X39 Patch Work?</h1>
-      <p class="sub">A neutral explanation focused on what people usually mean by “work” — with realistic expectations and common misunderstandings clarified.</p>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-top">
+        <span class="eyebrow">Independent educational resource</span>
+        <h1>How Does the X39 Patch Work?</h1>
+        <p class="lead">A neutral explanation focused on what people usually mean by “work” — with realistic expectations and common misunderstandings clarified.</p>
 
-      <p><em>
-        Many people asking this question already know X39 is a patch — they want to understand how to think about it as a wellness product, not read hype.
-      </em></p>
-<p>If you want the everyday design idea behind the patch (without hype), read: <a href="https://dmr440.github.io/patch-reference-hub/how-x39-is-designed-to-work.html">How X39 is designed to work</a>.</p>
-      <div class="note">
-        <strong>Important context:</strong>
-        Wellness tools are often evaluated personally and over time. This page focuses on interpretation and expectations, not guarantees.
+        <div class="banner disclosure">
+          <strong>Important context:</strong>
+          Wellness tools are often evaluated personally and over time. This page focuses on interpretation and expectations, not guarantees.
+        </div>
+
+        <div class="hero-grid">
+          <div class="panel">
+            <h2>Page overview</h2>
+            <p><em>Many people asking this question already know X39 is a patch — they want to understand how to think about it as a wellness product, not read hype.</em></p>
+            <p>If you want the everyday design idea behind the patch (without hype), read: <a href="/how-x39-is-designed-to-work.html">How X39 is designed to work</a>.</p>
+
+            <div class="quick-facts">
+              <div class="fact">
+                <strong>Meaning of “work”</strong>
+                This page explains how people commonly interpret that question in a wellness context.
+              </div>
+
+              <div class="fact">
+                <strong>Practical focus</strong>
+                The emphasis here is routine, expectations, and clearer interpretation rather than promises.
+              </div>
+
+              <div class="fact">
+                <strong>Reader intent</strong>
+                Many readers are trying to separate calm explanation from hype.
+              </div>
+
+              <div class="fact">
+                <strong>Related guide</strong>
+                The page also points readers to a separate design-focused article for everyday use context.
+              </div>
+            </div>
+          </div>
+
+          <aside class="mini-panel" aria-label="Publisher information">
+            <span class="kicker">Page details</span>
+            <p class="meta-line"><strong>Topic:</strong> How the X39 patch is commonly interpreted</p>
+            <p class="meta-line"><strong>Page type:</strong> Educational article</p>
+            <p class="meta-line"><strong>Site:</strong> Patch Reference Hub</p>
+            <p class="meta-line"><strong>Language:</strong> English; New Zealand</p>
+            <p class="meta-line"><strong>Canonical URL:</strong> <a href="https://patchreferencehub.com/x39-how-x39-works.html">patchreferencehub.com/x39-how-x39-works.html</a></p>
+          </aside>
+        </div>
+
+        <div class="banner medical">
+          <strong>Medical disclaimer:</strong> This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment.
+        </div>
       </div>
     </section>
 
-    <div class="grid">
-      <section class="card">
+    <section class="section section-grid-2">
+      <article class="card">
         <h2>What “work” can mean here</h2>
         <ul>
           <li>How the product is intended to be used</li>
           <li>How people fit it into routine</li>
           <li>What expectations are realistic</li>
         </ul>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2>Routine-based use (a practical lens)</h2>
         <p>Many people approach wearable wellness products as routine supports rather than one-time solutions. That framing is often more useful than chasing a single universal outcome.</p>
         <ul>
@@ -153,38 +712,64 @@
           <li>Keep the routine simple</li>
           <li>Track gently, without pressure</li>
         </ul>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2>Why online explanations feel confusing</h2>
         <ul>
           <li>Different expectations about what a “patch” should do</li>
           <li>Words like “results” being used inconsistently</li>
           <li>Personal interpretations spreading faster than neutral explanations</li>
         </ul>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2>How to evaluate explanations fairly</h2>
         <ul>
           <li>Separate category from expectations</li>
           <li>Prefer calm, neutral framing</li>
           <li>Be wary of absolute promises</li>
         </ul>
-      </section>
-    </div>
-
-    <section class="card" style="margin-top:14px;">
-      <h2>Related X39 pages</h2>
-      <p class="links">
-        → <a href="https://dmr440.github.io/patch-reference-hub/x39-what-is-x39.html">What is the LifeWave X39 patch?</a><br />
-        → <a href="https://dmr440.github.io/patch-reference-hub/x39-is-lifewave-x39-legit.html">Is LifeWave X39 legit?</a>
-      </p>
+      </article>
     </section>
 
-    <footer>
-      This site is for educational purposes only and does not provide medical advice. Individual experiences vary.
-    </footer>
-  </div>
+    <section class="section">
+      <div class="source-card">
+        <h2>Related X39 pages</h2>
+        <p>
+          <a class="summary-link" href="/x39-what-is-x39.html">What is the LifeWave X39 patch?</a><br />
+          <a class="summary-link" href="/x39-is-lifewave-x39-legit.html">Is LifeWave X39 legit?</a>
+        </p>
+
+        <div class="review-meta" id="faq">
+          <strong>Page status:</strong> Educational explanation page<br />
+          <strong>Site:</strong> Patch Reference Hub<br />
+          <strong>Purpose:</strong> Explain the question clearly without hype
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-card">
+      <p><strong>Patch Reference Hub</strong> is an independent educational website published by Dave Ross in New Zealand.</p>
+      <p><strong>Contact:</strong> <a href="mailto:dave@patchreferencehub.com">dave@patchreferencehub.com</a></p>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/disclosure.html">Disclosure</a>
+        <a href="/medical-disclaimer.html">Medical Disclaimer</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/editorial-policy.html">Editorial Policy</a>
+        <a href="/how-this-site-is-funded.html">How This Site Is Funded</a>
+      </div>
+
+      <p><strong>Funding disclosure:</strong> Some links may generate referral commissions because the publisher is a LifeWave Brand Partner.</p>
+      <p><strong>Medical disclaimer:</strong> This website is for educational purposes only and does not provide medical advice, diagnosis, or treatment.</p>
+      <p><strong>Last reviewed:</strong> March 17, 2026</p>
+    </div>
+  </footer>
 </body>
 </html>
